@@ -12,7 +12,7 @@ echo "Running as root..."
 sleep 2
 clear
 
-uci set system.@system[0].zonename='Asia/Tehran'
+#uci set system.@system[0].zonename='Asia/Tehran'
 
 uci set network.wan.peerdns="0"
 
@@ -38,7 +38,7 @@ if [ "$SNNAP" == "SNAPSHOT" ]; then
 
 echo -e "${YELLOW} SNAPSHOT Version Detected ! ${NC}"
 
-rm -f mahsa-s.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/Passwall/refs/heads/main/mahsa-s.sh && chmod 777 mahsa-s.sh && sh mahsa-s.sh
+rm -f mahsa-s.sh && wget https://raw.githubusercontent.com/rony432/Passwall/refs/heads/main/mahsa-s.sh && chmod 777 mahsa-s.sh && sh mahsa-s.sh
 
 exit 1
 
@@ -155,7 +155,7 @@ echo -e "${GREEN} XRAY : OK ! ${NC}"
 
  sleep 2
   
-rm -f amirhossein.sh && wget https://raw.githubusercontent.com/amirhosseinchoghaei/mi4agigabit/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
+rm -f amirhossein.sh && wget https://raw.githubusercontent.com/rony432/mi4agigabit/main/amirhossein.sh && chmod 777 amirhossein.sh && sh amirhossein.sh
 
 fi
 
@@ -228,7 +228,7 @@ uci commit system
 
 sed -i 's/XTLS\/Xray-core/GFW-knocker\/Xray-core/g' /usr/lib/lua/luci/passwall2/com.lua
 
-uci set system.@system[0].hostname=By-AmirHossein
+#uci set system.@system[0].hostname=By-AmirHossein
 
 uci commit system
 
