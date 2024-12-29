@@ -230,7 +230,7 @@ uci set system.@system[0].timezone='<+0330>-3:30'
 
 uci commit system
 
-uci set system.@system[0].hostname=By-AmirHossein
+uci set system.@system[0].hostname=passwall
 
 uci commit system
 
